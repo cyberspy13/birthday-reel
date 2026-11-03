@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>З Днем Народження!</title>
+<meta name="description" content="Мультик-привітання: поїздка на червоній «дев'ятці» вздовж Дністра в Новодністровську.">
+<meta property="og:type" content="video.other">
+<meta property="og:title" content="З Днем Народження! 🎂">
+<meta property="og:description" content="Мультик-привітання: поїздка на червоній «дев'ятці» вздовж Дністра.">
+<meta property="og:image" content="https://cyberspy13.github.io/birthday-reel/poster.jpg">
+<meta property="og:video" content="https://cyberspy13.github.io/birthday-reel/birthday-reel.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1080">
+<meta property="og:video:height" content="1920">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky-top: #2f9bea;
+    --sky-bottom: #d9f3ff;
+    --ink: #1e2a38;
+    --outline: #0b3d91;
+    --yellow: #ffd700;
+    --white: #ffffff;
+    --muted: #1e2a38cc;
+    --card-shadow: 0 14px 0 rgba(11, 61, 145, 0.25);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sky-top: #0b1e3a;
+      --sky-bottom: #1f4a7a;
+      --muted: #ffffffcc;
+      --card-shadow: 0 14px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(var(--sky-top), var(--sky-bottom)) fixed;
+    color: var(--ink);
+    font-family: 'Rubik', system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    width: 100%;
+    max-width: 520px;
+    padding: 28px 16px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 900;
+    line-height: 1.02;
+    font-size: clamp(40px, 11vw, 64px);
+    -webkit-text-stroke: 0.12em var(--outline);
+    paint-order: stroke fill;
+    text-shadow: 0 0.08em 0 rgba(11, 61, 145, 0.35);
+  }
+  h1 .l1 { color: var(--yellow); display: block; }
+  h1 .l2 { color: var(--white); display: block; }
+  .sub {
+    margin: 12px 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--muted);
+  }
+  .frame {
+    width: min(100%, calc(76vh * 9 / 16));
+    aspect-ratio: 9 / 16;
+    border: 6px solid var(--ink);
+    border-radius: 28px;
+    overflow: hidden;
+    background: #7dcbf8;
+    box-shadow: var(--card-shadow);
+  }
+  .frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .btn {
+    margin-top: 26px;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: var(--yellow);
+    color: var(--outline);
+    border: 4px solid var(--ink);
+    box-shadow: 0 6px 0 var(--ink);
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .btn:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--ink); }
+  .btn:focus-visible { outline: 4px solid var(--white); outline-offset: 3px; }
+  .from {
+    margin: 22px 0 0;
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--yellow);
+    -webkit-text-stroke: 0.1em var(--outline);
+    paint-order: stroke fill;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1><span class="l1">З Днем</span><span class="l2">Народження!</span></h1>
+  <p class="sub">Мультик-привітання · Новодністровськ · Дністер</p>
+  <div class="frame">
+    <video src="birthday-reel.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+  </div>
+  <a class="btn" href="birthday-reel.mp4" download="birthday-reel.mp4">Завантажити відео</a>
+  <p class="from">від Михайла ❤️</p>
+</main>
+</body>
+</html>
